@@ -24,7 +24,7 @@ var (
 // BTRV.
 func Init() error {
 	var err error
-	btrvdll, err = syscall.LoadLibrary("WBTRV32.DLL")
+	btrvdll, err = syscall.LoadLibrary(".\\WBTRV32.DLL")
 	if err != nil {
 		return err
 	}
